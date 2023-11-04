@@ -18,7 +18,7 @@ class IsAdminMiddleware
         if (!auth()->user() || !auth()->user()->admin) {
             return back()->with(
                 'alerts', [
-                    'title'           => 'Erro de Permissão',
+                    // 'title'           => 'Erro de Permissão',
                     'recommendations' => 'Caso o erro persista, procure o administrador do sistema.',
                     'type'     => 'danger',
                     'messages' => [

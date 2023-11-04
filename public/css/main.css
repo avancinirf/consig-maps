@@ -44,8 +44,8 @@
 
 }
 
-.produced {
-
+.card {
+    border-radius: 4px !important;
 }
 
 .main-alert-container ul {

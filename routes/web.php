@@ -17,9 +17,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Auth::routes();
+Auth::routes(['verify' => true]);
 
-Route::prefix('/app')->middleware('auth')->group(function() {
+Route::prefix('/app')->middleware(['auth', 'verified'])->group(function() {
     Route::get('/', function() { return redirect('/app/dashboard'); });
     Route::get('/dashboard', [App\Http\Controllers\HomeController::class, 'index'])->name('dashboard');
     Route::get('/teste', [App\Http\Controllers\HomeController::class, 'teste'])->middleware('is_admin')->name('teste');
