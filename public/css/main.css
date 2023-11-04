@@ -1,0 +1,53 @@
+
+
+:root {
+    /* --color-picton-blue: #44BDFF;
+    --color-navy-blue: #1681E5;
+    --color-teal: #008080;
+    --color-boulder: #777777;
+    --color-venice-blue: #0D4B85;
+    --color-polar: #E5F5F9;
+    --color-sinbad: #99D8C9;
+    --color-eucalyptus: #2CA25F;
+    --color-link-water: #DEEBF7;
+    --color-regentst-blue: #9ECAE1;
+    --color-boston-blue: #3182BD;
+    --color-half-baked: #80B1D3;
+    --color-Yellow Green: #B3DE69;
+    --color-ef5d71a: #2CA25F;
+    --color-d759cb2: #4DAF4A;
+    --color-1b56a2a: #377EB8;
+    --color-45f7814: #FFFFB3;
+    --color-orange: #FFBC7D;
+
+    --color--pale-pink: #f78da7;
+    --color--vivid-red: #cf2e2e;
+    --color--luminous-vivid-orange: #ff6900;
+    --color--luminous-vivid-amber: #fcb900;
+    --color--light-green-cyan: #7bdcb5;
+    --color--vivid-green-cyan: #00d084;
+    --color--pale-cyan-blue: #8ed1fc;
+    --color--vivid-cyan-blue: #0693e3;
+    --color--vivid-purple: #9b51e0; */
+}
+
+
+#app {
+    min-height: 100vh;
+}
+
+.footer {
+    padding: 50px;
+    background-color: var(--bs-gray-200);
+
+    width: 100%;
+
+}
+
+.produced {
+
+}
+
+.main-alert-container ul {
+    margin: 0;
+}

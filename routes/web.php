@@ -19,4 +19,8 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::prefix('/app')->middleware('auth')->group(function() {
+    Route::get('/', function() { return redirect('/app/dashboard'); });
+    Route::get('/dashboard', [App\Http\Controllers\HomeController::class, 'index'])->name('dashboard');
+    Route::get('/teste', [App\Http\Controllers\HomeController::class, 'teste'])->middleware('is_admin')->name('teste');
+});
