@@ -27,5 +27,6 @@ Route::prefix('/app')->middleware(['auth', 'verified'])->group(function() {
     Route::prefix('/user')->group(function() {
         Route::get('/', [App\Http\Controllers\UserController::class, 'index'])->name('user.datatable');
         Route::post('/createdatatable', [App\Http\Controllers\UserController::class, 'createDataTable'])->name('user.createDataTable');
-    });
+        Route::get('{id}/mymap', [App\Http\Controllers\HomeController::class, 'mymap'])->name('teste');
+    })->where('id', '[0-9]+');
 });

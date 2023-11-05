@@ -45,7 +45,7 @@
 }
 
 .card {
-    border-radius: 4px !important;
+    border-radius: 4px 4px 0px 0px !important;
 }
 
 .main-alert-container ul {
@@ -66,4 +66,17 @@
     padding-top: 4px !important;
     padding-bottom: 4px !important;
     font-size: 12px;
+}
+
+
+/* MyMap */
+
+#mymap-painel {
+    border-radius: 20px;
+}
+
+#mymap {
+    width: 100%;
+    height: 70vh;
+    min-height: 500px;
 }

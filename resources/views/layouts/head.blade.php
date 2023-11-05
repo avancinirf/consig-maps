@@ -24,6 +24,9 @@
     <!-- DataTables -->
     <link href="{{ asset('libs/DataTables/datatables.min.css') }}" rel="stylesheet">
 
+    <!-- Leaflet -->
+    <link href="{{ asset('libs/leaflet/leaflet.css') }}" rel="stylesheet">
+
     <!-- Bootstrap 5 icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 </head>

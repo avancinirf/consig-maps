@@ -22,7 +22,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('app/dashboard');
+        return view('app.dashboard');
     }
 
     /**
@@ -32,6 +32,16 @@ class HomeController extends Controller
      */
     public function teste()
     {
-        return view('app/teste');
+        return view('app.teste');
+    }
+
+    /**
+     * Show the application dashboard.
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
+    public function mymap()
+    {
+        return view('app.map.testemymap');
     }
 }
