@@ -1,1 +1,8 @@
-console.log('javascript loaded!')
+
+$(function() {
+
+
+
+});
+
+//# sourceURL=js/main.js
